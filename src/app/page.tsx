@@ -1,5 +1,8 @@
+"use client";
 import VantaBackground from "@components/VantaBackground"
 import { Orbitron } from "next/font/google";
+import Login from "@components/Login"
+import SignUp from "@components/SignUp"
 
 const orbitron = Orbitron({ subsets: ["latin"] });
 
@@ -13,6 +16,7 @@ const Home = () => {
                     Unlock your potential and be the best version of yourself.
                     Create an account account now to start your journey.
                 </p>
+                <Login /><SignUp className="ml-8" />
             </div>
         </div>
     );
